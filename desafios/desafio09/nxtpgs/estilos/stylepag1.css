@@ -1,0 +1,259 @@
+body {
+    background-color: rgb(148, 152, 206);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: aliceblue;
+    padding-bottom: 30px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 1.2em; 
+
+}
+header {
+    display: block;
+    align-items: center;
+    margin: auto;
+    max-width: 1300px;
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    padding-bottom: 25px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.236);
+}
+header h2 {
+    font-size: 0.9em;
+}
+.primeiro-p {
+    text-align: justify;
+    padding: 50px;
+    text-indent: 30px;
+}
+.paises div {
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    padding: 15px;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.paises div p { 
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+}
+.paises div:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.474);
+}
+.paises ul {
+    list-style-type: none;
+    background-color: #ccc;
+    background-color: #cccccce8;
+    border: 1px solid black;
+}
+.paises p {
+    font-weight: bold;
+    background-color: #ccccccb7;
+    border-radius: 2px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.474);
+}
+div .NA {
+    background-image: url('../imagens/band-usa.jpg');
+}
+div .EMEA {
+    background-image: url('../imagens/emea-band.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+div .BRASIL {
+    background-image: url('../imagens/band-brasil.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70px;
+}
+div .LATAM {
+    height: 70px;
+    background-image: url('../imagens/band-latam.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+div .CHINA {
+    height: 60px;
+    background-image: url('../imagens/band-china.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+div .SOUTH-KOREA {
+    height: 60px;
+    background-image: url('../imagens/band-south-korea.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+div .JAPAN {
+    height: 60px;
+    background-image: url('../imagens/band-japan.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div .ASIA {
+    background-image: url('../imagens/band-asia.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+aside {
+    display: block;
+    align-items: center;
+    max-width: 1300px;
+    margin: 10px auto;
+    background-color: rgb(191, 232, 245);
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.533);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404);
+    border-radius: 4px;
+}
+.video {
+    background-color: rgb(173, 212, 225);
+    height: 270.5px;
+    margin: auto;
+    text-align: center;
+    border-radius: 4px;
+    max-width: 800px;
+}
+aside p {
+    padding: 2px;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: white;
+    border-radius: 6px;
+}
+h1 a{
+    text-decoration: none;
+    color: #12F700;
+    background-color: #2c613c;
+    padding: 4px;
+    border-radius: 10px;
+}
+.texto a {
+    text-decoration: none;
+    color: #12F700;
+}
+.texto a:visited{
+    text-decoration: none;
+}
+#loud {
+    color: #12F700;
+    padding: 1px;
+    border-radius: 6px;
+}
+h1 strong {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgb(112, 112, 112);
+}
+h1 #loud {
+    color: #13FF00;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+h1 #optc {
+    color: #98C042;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.texto-aside {
+    display: block;
+    align-items: center;
+    margin: auto;
+    max-width: 1000px;
+    background-color: rgba(27, 27, 131, 0.764);
+    text-indent: 20px;
+    padding: 10px;
+    line-height: 40px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.loud {
+    color: #13FF00;
+}
+.optc {
+    color: #98C042;
+}
+.loud-link {
+    color: #13FF00;
+    background-color: rgba(71, 71, 71, 0.67);
+    text-decoration: none;
+    padding: 2px;
+    padding-left: 6px;
+    border-radius: 3.5px;
+}
+.optc-link {
+    color: #98C042;
+    background-color: rgba(45, 45, 45, 0.67);
+    text-decoration: none;
+    padding: 2px;
+    padding-left: 6px;
+    border-radius: 3.5px;
+}
+.aspas-link {
+    color:white;
+}
+.botao {
+    text-align: center;
+    border: 1px solid black;
+    background-color: #2c613c;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin: auto;
+    padding: 4px;
+    border-radius: 4px;
+}
+.botao a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    padding: 4px;
+}
+.botao:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.384);
+}
+footer p {
+    color: rgb(218, 218, 218);
+}
+footer {
+    background: linear-gradient(to right, rgb(141, 159, 51), rgb(95, 44, 141));
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    color: white;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
