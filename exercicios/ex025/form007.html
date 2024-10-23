@@ -9,10 +9,10 @@
     <h1>Exemplo de formulário</h1>
     <fieldset>
         <legend>Cadastre seu Estado</legend>
-        <form action=".php" method="get" autocomplete="on">
+        <form action="cadastro.php" method="get" autocomplete="on">
             <p>
                 <label for="iest">Estado</label>
-                <select name="estado" id="iestado">
+                <select name="estado" id="iestado" required>
                     <option value="" selected>--- Escolha ---</option>
                     <optgroup label="Região Sul">
                         <option value="RS">Rio Grande do Sul</option>
@@ -53,7 +53,18 @@
                 </select>
             </p>
             <p>
-                <label for="iprof"></label>
+                <label for="iprof">Profissão:</label>
+                <input type="text" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Contabilista</option>
+                    <option>Professor</option>
+                    <option>Desenvolvedor</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem..."></textarea>
             </p>
         </form>
     </fieldset>
