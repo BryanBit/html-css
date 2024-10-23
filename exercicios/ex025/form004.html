@@ -10,8 +10,32 @@
             padding: 20px;
             font-family: Arial, Helvetica, sans-serif;
         }
-        input {
-            width: 130px;
+        #inome, #iemail {
+            width: 230px;
+        }
+        #itel {
+            width: 100px;
+        }
+        .butao {
+            display: inline-block;
+            background-color: rgb(252, 246, 238);
+            font-weight: bold;
+            padding: 6px;
+            margin: 2px;
+            border-radius: 10px;
+            border: 1px solid #0000003d;
+        }
+        #enviar:hover {
+            border: 1px solid black;
+            background-color: rgb(200, 248, 200);
+            transform: scale(1.06);
+            transition: .3s;
+        }
+        #limpar:hover {
+            border: 1px solid black;
+            background-color: lightyellow;
+            transform: scale(1.06);
+            transition: .3s;
         }
     </style>
 </head>
@@ -22,7 +46,7 @@
             <legend>Dados pessoais</legend>
             <p>
                 <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" required minlength="2" maxlength="25">
+                <input type="text" name="nome" id="inome" required minlength="2" maxlength="50" autocomplete="name">
             </p>
             <p>
                 <label for="iemail">E-mail</label>
@@ -30,13 +54,13 @@
             </p>
             <p>
                 <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2})\d{4,5}-\d{4}$" placeholder="(xx) x xxxx-xxxx">
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2})\d{4,5}-\d{4}$" placeholder="(xx) x xxxx-xxxx" maxlength="12">
             </p>
         </fieldset>
         <!-- Estudar mais sobre RegEx-->
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar" id="enviar" class="butao">
+            <input type="reset" value="Limpar" id="limpar" class="butao">
         </p>
     </form>
 </body>
