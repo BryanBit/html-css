@@ -1,0 +1,59 @@
+@media all {
+    body {
+        background-color: aliceblue;
+        color: rgb(77, 77, 77);
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+    h1 {
+        font-size: 3em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    menu {
+        background-color: rgb(115, 115, 115);
+        text-align: center;
+    }
+    li {
+        color: rgb(255, 248, 239);
+        display: inline-block;
+        margin-right: 20px;
+        padding: 10px;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    p {
+        display: block;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    li:hover {
+        transform: scale(1.2);
+        transition: 0.2s;
+    }
+    footer {
+        background-color: gray;
+        color: white;
+        padding: 6px;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h1 {
+        text-align: center;
+    }
+    menu {
+        display: none;
+    }
+    p {
+        line-height: 20px;
+    }
+    footer::after {
+        content: 'Conteúdo fornecido apenas para impressão. Exclusivo para uso didático.';
+    }
+}
