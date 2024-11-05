@@ -15,14 +15,29 @@ header h1 {
     padding: 10px;
     text-align: center;
 }
-#burguer {
-    background-color: rgb(38, 38, 38);
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    background-color: #484848;
+}
+.hamburger span {
     display: block;
-    color: white;
-    text-align: center;
+    margin: auto;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+.hamburger:hover span {
+    background-color: black;
+}
+.hamburger:hover {
+    background-color: white;
+    cursor: pointer;
 }
 menu {
-    display: block;
+    display: none;
 }
 menu ul {
     list-style-type: none;
